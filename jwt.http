@@ -1,0 +1,32 @@
+@api = http://localhost:3000
+###
+GET {{api}}
+
+###
+GET {{api}}/me
+
+###
+POST {{api}}/singup
+Content-Type: application/json
+
+{
+    "username": "12334",
+    "email": "maxiturbo@gmail.com",
+    "password": "maxi123"
+}
+
+###
+GET {{api}}/me
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOWYyYTgxYjdmYTJhMDM4N2U1YjI1YyIsImlhdCI6MTYyMTA0Mzg0MSwiZXhwIjoxNjIxMTMwMjQxfQ._69-0S527x06ubj1zu-RVY41gl7ap3LS69gMYFcaPYA
+###
+GET {{api}}/me
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOWRmNzdjZTJhYzc0MDYyNWQ4YWJiMyIsImlhdCI6MTYyMTA0NjA0NiwiZXhwIjoxNjIxMTMyNDQ2fQ.zSN4mmKF_hRWo5FiNfpHuhB9yo3s5b2P4dprOhby3Lw
+
+###
+POST {{api}}/singin
+Content-Type: application/json
+
+{
+    "email": "maxiturbo@gmail.com",
+    "password": "maxi123"
+}

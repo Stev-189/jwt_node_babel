@@ -1,0 +1,35 @@
+npm init -y
+touch Notes.txt
+npm i express mongoose jsonwebtoken bcryptjs
+mkdir src
+touch src/index.js
+mkdir src/models
+touch src/models/User.js
+mkdir src/controllers
+touch src/app.js
+tocuh src/database.js src/config.js
+touch .babelrc
+//copiar devDependencias y 
+npm install
+
+//mongodb
+use simplejwt
+db.users.find().pretty()
+
+//instlar mongodb MAC
+brew tap mongodb/brew
+brew install mongodb-community
+brew services list // si dice stopet esta detenido
+brew services start mongodb-community
+//https://www.youtube.com/watch?v=gBOZo9aivyA
+
+// para ver respuestas de api res usar rest client
+
+// comandos vasicos mongodn por que seimpre s eme olvidan
+mongo
+show dbs
+use [dbname]
+show collections
+db.[collectionName].find().pretty()
+db.[collectionName].drop()//elimina datos de collecion
+// si modificamos el schema de mongo mejor reiniciar manuel el server
